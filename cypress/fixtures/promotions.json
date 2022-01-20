@@ -1,0 +1,22 @@
+{
+  "promotions": [
+    {
+      "promotionId": "sabe movie for b2b",
+      "orderId": 32,
+      "promoArea": [
+        "home:main"
+      ],
+      "promoType": "VOD",
+      "showPrice": false,
+      "showText": false,
+      "localizedTexts": {
+        "ar": [
+          "Sabe movie"
+        ],
+        "en": [
+          "Sabe movie"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Promotions GET API",
+    "line": 1,
+    "id": "promotions-get-api",
+    "tags": [],
+    "uri": "Promotions.feature",
+    "elements": [
+      {
+        "id": "promotions-get-api;verify-the-status-code-is-200",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify the status code is 200",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I hit the promotion api end point",
+            "result": {
+              "status": "passed",
+              "duration": 1778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Verify the status code is 200",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "promotions-get-api;verify-all-the-properties-exist-in-response",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify all the properties exist in response",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I hit the promotion api end point",
+            "result": {
+              "status": "passed",
+              "duration": 1006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify all the propertise exists in response",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "promotions-get-api;verify-showprice-and-showtext-can-have-value-as-true-or-false",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify showPrice and showText can have value as True or False",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I hit the promotion api end point",
+            "result": {
+              "status": "passed",
+              "duration": 378000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "showPrice and showText fields return only true or false value",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "promotions-get-api;verify-the-response-values-for-all-the-fields",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify the response values for all the fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I hit the promotion api end point",
+            "result": {
+              "status": "passed",
+              "duration": 364000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "The response values should be correct",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "promotions-get-api;verify-the-promotionid-and-programtype-field-values",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Verify the promotionId and programType field values",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I hit the promotion api end point",
+            "result": {
+              "status": "passed",
+              "duration": 589000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "promotionId field should have string values",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "programType should contain EPISODE MOVIE SERIES or SEASON",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "promotions-get-api;verify-the-error-details-in-response-when-apikey-is-invalid",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verify the error details in response when apikey is invalid",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I hit the promotion api end point with invalid apikey",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Verify the status code is 403",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "requestId is not null",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "code is 8001",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "message is invalid api key",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "promotions-get-api;verify-the-error-details-in-response-when-apikey-is-blank",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Verify the error details in response when apikey is blank",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I hit the promotion api end point with blank apikey",
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Verify the status code is 403",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "requestId is not null",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "code is 8001",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "message is invalid api key",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
